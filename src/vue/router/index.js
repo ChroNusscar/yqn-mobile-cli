@@ -11,6 +11,7 @@ import login from './login';
 Vue.use(Router);
 
 const RouterModel = new Router({
+  mode: 'history',
   routes: [...home, ...items, ...user, ...order, ...login]
 });
 

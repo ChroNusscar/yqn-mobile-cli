@@ -38,13 +38,13 @@
 			<div class="item_desc_wrap" v-html="goods.desc"></div>
 		</div>
 
-		<van-goods-action>
+		<!-- <van-goods-action>
 			<van-goods-action-mini-btn @click="doContact" icon="wangwang" iconClass="red afterTag" />
 			<van-goods-action-mini-btn @click="toCart" icon="cart" :info="cartInfo"/>
 			<van-goods-action-mini-btn @click="addCollect" icon="shoucang" />
 			<van-goods-action-big-btn @click="addCart" text="加入购物车" />
 			<van-goods-action-big-btn primary @click="doBuyNow" text="立即购买" />
-		</van-goods-action>
+		</van-goods-action> -->
 
 		<van-popup v-model="showContact">
 			<md-kefu mobile="16454193338" />
@@ -155,9 +155,9 @@ export default {
     [Popup.name]: Popup,
     [Swipe.name]: Swipe,
     [SwipeItem.name]: SwipeItem,
-    [GoodsAction.name]: GoodsAction,
-    [GoodsActionBigBtn.name]: GoodsActionBigBtn,
-    [GoodsActionMiniBtn.name]: GoodsActionMiniBtn,
+    // [GoodsAction.name]: GoodsAction,
+    // [GoodsActionBigBtn.name]: GoodsActionBigBtn,
+    // [GoodsActionMiniBtn.name]: GoodsActionMiniBtn,
     'entity-group': () =>
       import(/* webpackChunkName: "EntityGroup" */ './EntityGroup/index'),
     'virtual-group': () =>
